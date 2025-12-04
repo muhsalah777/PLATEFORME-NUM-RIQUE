@@ -5,20 +5,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body id="home" class="position-relative bg-img">
 
-    <nav class="navbar navbar-expand-lg navbar-dark group bg-primary">
+    <nav class="navbar z-1 d-flex navbar-expand-lg navbar-dark group bg-n rounded-0 mb-3">
         <div class="container">
-            <a class="navbar-brand" href="#">SMART LOGIN</a>
+                <img class="w-7 me-3 rounded-4" src="images/591494398_824400220498950_689630321791892462_n.jpg" alt="">
+                <h2 class="text-white  fs-3" id="username"></h2>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,13 +38,82 @@
             </div>
         </div>
     </nav>
-    <div class="container text-center h-100 my-5">
-        <div class="group m-auto w-75 p-5">
-            <h2 class="text-primary fs-1" id="username"></h2>
+
+
+<div class="d-flex w-100 px-5 flex-row-reverse">
+<div class="">
+   
+</div>
+<div class="w-50 d-flex flex-column mb-5">
+<div class="mx-5 d-flex bg-c align-items-center rounded-4 justify-content-center my-3">
+    <div class="m-3 d-flex align-items-center rounded-4 justify-content-center flex-column">
+        <div class="progress-container" style="--value: 100">
+            <div class="progress-ring bg1"></div>
+            <div class="progress-text">7.6</div>
+        </div>
+        <div class="my-3">
+            <h4 class="tx1">PH</h4>
+        </div>
+        <div class="my-2">
+            <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+  <label class="form-check-label" for="switchCheckChecked"></label>
+</div>
         </div>
     </div>
+    <div class="m-3 d-flex align-items-center rounded-4 justify-content-center flex-column">
+        <div class="progress-container me-2" style="--value: 100">
+            <div class="progress-ring bg2"></div>
+            <div class="progress-text">2.3 NTU</div>
+        </div>
+        <div class="my-3">
+            <h4 class="tx2">Turbidity</h4>
+        </div>
+        <div class="my-2">
+            <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+  <label class="form-check-label" for="switchCheckChecked"></label>
+</div>
+        </div>
+    </div>
+    <div class="m-3 d-flex align-items-center rounded-4 justify-content-center flex-column">
+        <div class="progress-container me-2" style="--value: 100">
+            <div class="progress-ring bg3"></div>
+            <div class="progress-text">29.8</div>
+        </div>
+         <div class="my-3">
+            <h4 class="tx3">TEMPERATURE</h4>
+        </div>
+        <div class="my-2">
+            <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+  <label class="form-check-label" for="switchCheckChecked"></label>
+</div>
+        </div>
+    </div>
+</div>
+<div class="mx-5 d-flex bg-c align-items-center rounded-4 justify-content-center">
+    <div class="w-25 d-flex">
+ <div class="vertical-text ps-5 ms-5 my-3">
+        <h5>Taux de colonisation du récif (%)</h5>
+    </div>
+    </div>
+   
+    <div class="card shadow-sm w-100 border-0">
+  <div class="px-3 pt-3 pb-0">
+    <div id="bar-chart"></div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
 
 
+<script src="./chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
